@@ -1,0 +1,11 @@
+Please use Makefile to build the program.
+To execute the optimizer:
+bash execute.sh
+then follow the instructions to choose one optimization strategy
+0: loop unrolling followed by svn
+1: svn followed by loop unrolling
+2: loop unrolling 
+3: svn
+
+The program will require user specifying the input file with only prefix.
+i.e. if you have a file 'algred.i' reside in local directory, then the input file name should be 'algred'. Assuming you would like to apply optimization strategy 0 (loop unrolloing followed by svn), you can expect an output file with name 'algred_unroll_svn.i' generated in the local folder,(you will also see intermediate file 'algred_unroll.i' yet 'algred_unroll_svn.i' would be the one used for similator). Similarly, should you apply optimization strategy 3(svn) for 'algred.i', the output file will be 'algred_svn.i'
