@@ -1,3 +1,11 @@
+
+The program improves the running time of a set of test codes presented in a subset of the ILOC intermediate form, specifically, the program
+- Scan and parse the ILOC code
+- Build an internal representation for the ILOC code
+- Perform both loop unrolling and value numbering
+- Print the transformed ILOC code in a form that can be read and executed by the ILOC simulator.
+
+————————————————————————————
 Please use Makefile to build the program.
 To execute the optimizer:
 bash execute.sh
